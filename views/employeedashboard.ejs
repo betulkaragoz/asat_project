@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Kurum Yönetim</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/employeedashboard.css">
+
+
+  <style>
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/employeedashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <img src="/images/asat.jpg" width="25" height="25" style="margin-inline: 1%;">
+      
+    <h5 class="my-0 mr-md-auto font-weight-normal"><%= employee.userNameE %> <%= employee.userSurnameE%></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark">Hesabım</a>
+      <a class="p-2 text-dark" href="/logout">Çıkış Yap</a>
+    </nav>
+  </div>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center my-5">
+    <h1 class="display-4">Kurum Yönetim</h1>
+  </div>
+
+  <div class="container">
+    <div class="card-deck mb-3 text-center mt-5">
+
+      <!-- fatura girme card-->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Fatura Oluştur</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Müşteri Faturaları</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Müşterinin aylık</li>
+            <li>su kullanım miktarına</li>
+            <li>göre ödeyeceği </li>
+            <li>faturayı kaydet</li>
+          </ul>
+          <a class="btn btn-lg btn-block btn-outline-primary" href="/createbills" style="text-decoration: none;">İşlem Sayfası</a>
+        </div>
+      </div>
+
+      <!-- arıza kayıtları card-->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Arıza Kayıtları</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Bölgesel Arızalar</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Acil bildirilen</li>
+            <li>arıza kayıtlarını</li>
+            <li>göster ve ekip</li>
+            <li>yönlendir</li>
+          </ul>
+          <a class="btn btn-lg btn-block btn-outline-primary" href="/troubleDashboard" style="text-decoration: none;">Arıza Kayıtları</a>
+        </div>
+      </div>
+
+      <!-- öneri ve şikayet card-->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Öneri ve Şikayetler</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Müşteri Fikirleri</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Müşterilerin iletmek</li>
+            <li>istedikleri öneri</li>
+            <li>ve şikayetleri görerek</li>
+            <li>geri dönüş oluştur</li>
+          </ul>
+          <a class="btn btn-lg btn-block btn-outline-primary" href="/reqsncompsDashboard" style="text-decoration: none;">Listeyi Görüntüle</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"></script>
+
+  </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Fatura Sorgu, Asat, Antalya">
+
+    <meta name="description" content="Asat Fatura Sorgu Sitesi">
+    <title>Asat Fatura Sorgulama</title>
+    <!-- ilk meta her cihazda düzgün görünmesini sağlar
+    ikinci meta tarayıcı aramasında öne çıkmak için koyulan keyler
+    üçüncü meta site tarayıcıdaönerildiğinde altta yazacak olan açıklamadır
+    title siteyi açtığımızda sekmenin üzerinde yazan metindir-->
+
+    <!-- *alt shit f kodu düzenler
+    *ctrl alt aşağı/yukarı imleci yukarı ve aşağı yönlerde büyütür
+    *alt yukarı/aşağı satırı yukarı aşağı kaydırır
+    *ctrl d aynı yazıyı bulma ve değiştirme
+-->
+
+    <style>
+        .divOzellik {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(102, 112, 209);
+            text-align: center;
+        }
+
+        table{
+            border: 3px, solid, black;
+        }
+
+   
+    </style>
+
+</head>
+
+<body>
+    <h1> betül Karagöz </h1>
+    <p> selam nasılsın üğüğüüçöçö</p>
+    <hr> <!-- çizgi çizer-->
+    <br> <!-- 1 satır boşluk bırakır-->
+    <p><strong> <i>burnun kapıya kısılsın</i></strong></p> <!-- strong yazıyı kalın yapar, i 
+    elementi italik yapar, b kalın yapar (strongla aynı), mark üstünü sarıyla çizer-->
+    <center><img src="images/Dog_Astra_Valorant.jpg" alt="Fotoyu bulamadım" width="50" height="50">
+    </center>
+    Google'a gitmek için <a href="https://www.google.com" target="_blank">tıklayınız.</a>
+    <!-- A elementinin içine resim de koyulabilir / görsel linke götürür-->
+    <!-- ul : unordinary (sırasız liste) ol (ordinary / sıralı )liste -- ls: liste elemanları-->
+
+    <body>
+        <h3>İçecekler</h3>
+        <ul>
+            <li>Çay</li>
+            <li>Kahve</li>
+            <li>Ice Tea</li>
+        </ul>
+
+        <ol type="A">
+            <li>Çay</li>
+            <li>Kahve</li>
+            <li>Ice Tea</li>
+        </ol>
+    </body>
+
+        <!-- tables
+    tr: table row
+    th: table head
+    td: table data
+    rowspan: satır birleştirir
+    colspan: sütun birleştirir
+    -->
+
+    <!-- p ve h1 h2.. elementleri blok elementtir. kullanıldığında tüm satırı kaplar. span elementi
+    se blok element değildir inline elementtir sadece yazdığın yer kadarını kullanır. diğer
+    eklenen elementler yanında boş yer varsa yanına yerleşir. -->
+
+
+    <table>
+        <tr>
+            <th>İsim</td>
+            <th>Soyisim</td>
+            <th>Yaş</td>
+        </tr>
+
+        <tr>
+            <td>Beto</td>
+            <td>Karagöz</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="3">Kişisel Bilgiler</th>
+        </tr>
+
+        <tr>
+            <td>Beto</td>
+            <td>Karagöz</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- div container gibi bi şey . : class anlamına gelir # : id anlamına gelir.-->
+    <div class="divOzellik">
+        <h2>Selamün aleyq</h2>
+    </div>
+
+    <form>
+        Adınız : <input type="text" placeholder="İsminiz">
+        <input type="password" placeholder="şifreniz">
+        <input type="email" placeholder="mail adresi"> <br>
+        kitap okumak <input type="checkbox"> <br>
+        spor yapmak <input type="checkbox"> <br> <br>
+        kadın <input type="radio" name="cinsiyet"> <br>
+        erkek <input type="radio" name="cinsiyet"> <br>
+        Dosya seç <input type="file"> <br> <br>
+        <textarea name="mesaj:" id="textArea1" cols="30" rows="10"></textarea> <br>
+        <h3>İçecek Seçiniz</h3>
+        <select>
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Limonata">Limonata</option>
+        </select>
+        <br><br>
+        <input type="submit" value="gönder">
+        <input type="reset" value="temizle"> <br> <br>
+
+    </form>
+
+    <form>
+        <table>
+            <tr>
+                <td>Adınız:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Soyadınız:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email Adresi:</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Şifre:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Doğum Tarihi:</td>
+                <td><input type="date"></td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- video ekleme-->
+    <video width="600" height="400" controls>
+        <source src="videos/valo.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <!-- iFrame kullanımı-->
+
+    <iframe width="500" height="800" src="https://www.w3schools.com">
+    </iframe>
+
+</body>
+
+</html>

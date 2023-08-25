@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öneri ve Şikayetler</title>
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+    <style>
+        #gecis{
+            background-color: lightgray;
+            color: lightgray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <p style="text-align: center; margin-top: 5%;"><img src="images/asatlogo.jpg"></p>
+
+        </div>
+
+        <div style="width: 30%; margin-inline: 35%;" class="my-5">
+
+
+            <!-- Pills navs -->
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation" id="gesis">
+                    <a class="nav-link active" id="tab-oneri" data-mdb-toggle="pill" href="#pills-oneri"
+                        role="tab" aria-controls="pills-oneri" aria-selected="true">Öneri</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tab-sikayet" data-mdb-toggle="pill" href="#pills-sikayet" role="tab"
+                        aria-controls="pills-sikayet" aria-selected="false">Şikayet</a>
+                </li>
+            </ul>
+            <!-- Pills navs -->
+
+            <!-- Pills content -->
+            <div class="tab-content my-5">
+                <div class="tab-pane fade show active" id="pills-oneri" role="tabpanel"
+                    aria-labelledby="tab-oneri">
+                    <form action="istek/reqsncomps" method="POST">
+
+                        <h5 style="text-align: center;" class="mb-5">Öneri Formu</h5>
+
+                        <!-- isim-soyisim -->
+                        <div style="display: flex;">
+                            <div class="form-outline mb-4" style="flex: 1; margin-right: 2%;">
+                                <input type="text" id="isimR" class="form-control" name="isimR"/>
+                                <label class="form-label" for="isimR">İsim</label>
+                            </div>
+        
+                            <div class="form-outline mb-4" style="flex: 1; margin-left: 2%;">
+                                <input type="text" id="soyisimR" class="form-control" name="soyisimR"/>
+                                <label class="form-label" for="soyisimR">Soyisim</label>
+                            </div>
+                        </div>
+
+                        <!--eposta - tel -->
+
+                        <div style="display: flex;">
+                            <div class="form-outline mb-4" style="flex: 1; margin-right: 2%;">
+                                <input type="email" id="mailR" class="form-control" name="mailR"/>
+                                <label class="form-label" for="mailR">E Mail</label>
+                            </div>
+        
+                            <div class="form-outline mb-4" style="flex: 1; margin-left: 2%;">
+                                <input type="tel" id="phonenumberR" class="form-control" name="phonenumberR"/>
+                                <label class="form-label" for="phonenumberR">Telefon Numarası</label>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mt-2">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="oneri" name="oneri"
+                                style="height: 100px"></textarea>
+                            <label for="oneri">Öneriniz</label>
+                        </div>
+        
+                       
+        
+                        <div class="form-floating mt-4" style="display: flex; text-align: center;">
+                            <div style="flex: 1;">
+                                <button type="reset" class="btn btn-outline-danger" data-mdb-ripple-color="dark" style="width: 90%;">Temizle</button>
+                            </div>
+                            <div style="flex: 1;">
+                                <button type="submit" class="btn btn-outline-primary" style="width: 90%;">Gönder</button>
+                            </div>
+                       
+                        </div>
+
+                        
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pills-sikayet" role="tabpanel" aria-labelledby="tab-sikayet">
+                    <form action="sikayet/reqsncomps" method="POST">
+
+                        <h5 style="text-align: center;" class="mb-5">Şikayet Formu</h5>
+
+                        <!-- isim-soyisim -->
+                        <div style="display: flex;">
+                            <div class="form-outline mb-4" style="flex: 1; margin-right: 2%;">
+                                <input type="text" id="isimS" class="form-control" name="isimS"/>
+                                <label class="form-label" for="isimS">İsim</label>
+                            </div>
+        
+                            <div class="form-outline mb-4" style="flex: 1; margin-left: 2%;">
+                                <input type="text" id="soyisimS" class="form-control" name="soyisimS"/>
+                                <label class="form-label" for="soyisimS">Soyisim</label>
+                            </div>
+                        </div>
+
+                        <!--tel - eposta-->
+
+                        <div style="display: flex;">
+                            <div class="form-outline mb-4" style="flex: 1; margin-right: 2%;">
+                                <input type="email" id="mailS" class="form-control" name="mailS"/>
+                                <label class="form-label" for="mailS">E Mail</label>
+                            </div>
+        
+                            <div class="form-outline mb-4" style="flex: 1; margin-left: 2%;">
+                                <input type="tel" id="phonenumberS" class="form-control" name="phonenumberS"/>
+                                <label class="form-label" for="phonenumberS">Telefon Numarası</label>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mt-2">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="sikayet" name="sikayet"
+                                style="height: 100px"></textarea>
+                            <label for="sikayet">Şikayetiniz</label>
+                        </div>
+        
+                       
+        
+                        <div class="form-floating mt-4" style="display: flex; text-align: center;">
+                            <div style="flex: 1;">
+                                <button type="reset" class="btn btn-outline-danger" data-mdb-ripple-color="dark" style="width: 90%;">Temizle</button>
+                            </div>
+                            <div style="flex: 1;">
+                                <button type="submit" class="btn btn-outline-primary" style="width: 90%;">Gönder</button>
+                            </div>
+                       
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Pills content -->
+    <script src="js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="js/phone.js"></script>
+
+
+</body>
+
+</html>
