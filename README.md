@@ -18,7 +18,7 @@ To run this project you will need to add the following environment variables to 
   
 ## Used Technologies
 
-**Tools:** HTML, CSS 
+**Tools:** HTML, CSS, EJS
 
 **Server:** MongoDB
 
