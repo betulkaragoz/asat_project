@@ -83,8 +83,6 @@ const getLogout = (req, res) => {
     res.redirect("/login");
 }
 
-
-
 export {
     getIndexPage,
     getTablePage,
