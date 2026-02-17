@@ -2,7 +2,7 @@
 # asat_project
 
 This project was developed for Asat while I was an intern.
-
+https://www.linkedin.com/posts/betulkaragoz_project-dear-connections-i-would-like-activity-7271523712552628224-uQbX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADP6T4UB-Feaf9AJE8Fwh_X1ZnMUX50u67E
 
 ## Environment Variables
 
