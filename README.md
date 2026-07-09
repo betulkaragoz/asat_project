@@ -1,7 +1,8 @@
 
 # asat_project
 
-This project was developed for Asat while I was an intern.
+This project was developed for Asat while I was an intern. 
+In this project, I learned about the MVC architecture and its importance, as well as how to use JavaScript and other tools, and I refreshed my knowledge of the technologies I was already familiar with.
 https://www.linkedin.com/posts/betulkaragoz_project-dear-connections-i-would-like-activity-7271523712552628224-uQbX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADP6T4UB-Feaf9AJE8Fwh_X1ZnMUX50u67E
 
 ## Environment Variables
